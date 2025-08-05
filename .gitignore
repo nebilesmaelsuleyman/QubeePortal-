@@ -20,3 +20,18 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# === Backend specific ignores ===
+
+backend/dist
+backend/node_modules
+backend/build
+
+# Logs
+backend/logs
+backend/*.log
+...
+
+# .env files
+backend/.env
+backend/.env.local
+...
