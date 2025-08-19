@@ -5,3 +5,4 @@ export const ClassroomSchema = z.object({
   gradeLevel: z.string(),
   teacherId: z.string(),
 });
+export type Tclassroom = z.infer<typeof ClassroomSchema>;

@@ -10,10 +10,12 @@ export const ClassScheduleSchema = z.object({
     'Tuesday',
     'Wednesday',
     'Thursday',
-    'Friday',   
+    'Friday',
     'Saturday',
     'Sunday',
   ]),
   startTime: z.string(),
   endTime: z.string(),
 });
+
+export type TclasShedule = z.infer<typeof ClassScheduleSchema>;

@@ -6,3 +6,5 @@ export const AttendanceSchema = z.object({
   date: z.coerce.date(),
   status: z.enum(['present', 'absent', 'late']),
 });
+
+export type TAttendance = z.infer<typeof AttendanceSchema>;

@@ -4,3 +4,5 @@ export const SubjectSchema = z.object({
   classroomId: z.string(),
   teacherId: z.string(),
 });
+
+export type Tsubject = z.infer<typeof SubjectSchema>;

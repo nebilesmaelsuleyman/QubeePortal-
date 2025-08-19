@@ -6,3 +6,5 @@ export const SubscriptionPlanSchema = z.object({
   maxStudents: z.number().int(),
   features: z.array(z.string()),
 });
+
+export type Tsubscription = z.infer<typeof SubscriptionPlanSchema>;

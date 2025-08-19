@@ -5,3 +5,5 @@ export const NotificationSchema = z.object({
   sentAt: z.date().optional(),
   type: z.enum(['system', 'reminder', 'alert']),
 });
+
+export type Tnotification = z.infer<typeof NotificationSchema>;

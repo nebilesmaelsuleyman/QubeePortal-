@@ -4,3 +4,5 @@ export const TeacherSchema = z.object({
   schoolId: z.string(),
   subjectSpecialization: z.string(),
 });
+
+export type Tteacher = z.infer<typeof TeacherSchema>;

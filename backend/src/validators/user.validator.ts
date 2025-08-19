@@ -8,3 +8,5 @@ export const UserSchema = z.object({
   schoolId: z.string().nullable().optional(),
   isApproved: z.boolean().optional(),
 });
+
+export type Tuser = z.infer<typeof UserSchema>;

@@ -5,3 +5,5 @@ export const SchoolSchema = z.object({
   plan: z.string(),
   isActive: z.boolean().optional(),
 });
+
+export type Tschool = z.infer<typeof SchoolSchema>;

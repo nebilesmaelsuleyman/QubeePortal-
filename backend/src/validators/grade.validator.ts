@@ -5,3 +5,5 @@ export const GradeSchema = z.object({
   term: z.string(),
   score: z.number(),
 });
+
+export type Tgrade = z.infer<typeof GradeSchema>;
