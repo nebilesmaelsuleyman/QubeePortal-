@@ -10,7 +10,7 @@ export const ClassScheduleSchema = z.object({
     'Tuesday',
     'Wednesday',
     'Thursday',
-    'Friday',
+    'Friday',   
     'Saturday',
     'Sunday',
   ]),
